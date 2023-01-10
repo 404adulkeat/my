@@ -1,0 +1,87 @@
+@import url(index.css);
+:root {
+    --white: #f8f8f8;
+    --grey: #ccc;
+    --darkblue: #2d4b6b;
+}
+main {
+    min-height: calc(100vh - 130px);
+}
+.signup-page {
+    padding-top: 3rem;
+}
+.signup-title {
+    text-align: center;
+    color: var(--darkblue);
+}
+.signup-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) { 
+    .signup-form {
+        padding: 0px 60px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 576px) { 
+    .signup-form {
+        padding: 0px 60px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .signup-form {
+        width: 50rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .signup-form {
+        width: 50rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .signup-form {
+        width: 50rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) { 
+    .signup-form {
+        width: 50rem;
+        font-size: 1.5rem;
+    }
+}
+.signup-form label,
+.signup-form select,
+.signup-form input:not([type="checkbox"]) {
+    display: block;
+    margin-bottom: .8rem;
+    width: 100%;
+}
+.signup-form input,
+.signup-form select {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--grey);
+}
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: none;
+    background-color: var(--white);
+}
+.signup-form input:hover {
+    border: 1px solid var(--darkblue);
+    transition: all .6s;
+}
+[type="checkbox"] {
+    transform: scale(1.3,1.3);
+    cursor: pointer;
+}

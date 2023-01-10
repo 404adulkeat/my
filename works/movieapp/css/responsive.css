@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+.row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.img-fluid {
+    width: 100%;
+}
+.col-3:hover {
+    transform: translateY(-1rem);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+@media (max-width: 576px) { 
+    html {
+        font-size: 60.5%;
+    }
+    .main-nav {
+        padding: 0 .2rem;
+        padding-bottom: .2rem;
+    }
+    .background {
+        height: 35vh;
+    }
+    li,a {
+        font-size: 1.3rem;
+    }
+    a {
+        margin-left: 1.2rem;
+    }
+    .content {  
+        width: 90%;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    .how-3 {
+        width: 90%!important;
+    }
+    .col-2 {
+        float: left;
+        width: 100%;
+    }
+    .features-right {
+        padding: 2rem!important;
+        padding-top: 6rem!important;
+    }
+    .features-right h3 {
+        padding: .5rem;
+        margin: 0;
+        font-size: 2rem!important;
+    }
+    .features-right p {
+        padding: .5rem;
+        margin: 0;
+        font-size: 1.5rem!important;
+    }
+    .features-right a {
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .col-3 {
+        float: left;
+        width: 100%;
+    }
+    .counters {
+        padding: 1rem 0!important;
+    }
+    .plans {
+        padding: 4rem;
+    }
+    .plans a {
+        margin: 0;
+    }
+    .plan {
+        margin-bottom: 0!important;
+    }
+    .plan-center .inner-plan {
+        padding: 2rem 0!important;
+    }
+    .plan__features li{
+        font-size: 1.5rem!important;
+    }
+    .section-title {
+        color: var(--gray);
+        font-size: 2.5rem!important;
+        text-align: center;
+        padding: 0!important;
+        padding-bottom: 2rem!important;
+    }
+    .col-3 h4 {
+        padding: .5rem 0!important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    html {
+        font-size: 64.5%;
+    }
+    .container {
+        width: 52rem;
+        padding: 1rem;
+    }
+    .links li {
+        margin-left: 1rem;
+    }
+    li,a {
+        font-size: 1.8rem;
+    }
+    .background {
+        height: 50vh;
+    }
+    .content {  
+        width: 85%;
+        padding: 1.6rem;
+        font-size: 1.3rem;
+    }
+    .col-2 {
+        float: left;
+        width: 100%;
+    }
+    .features-right {
+        padding: 2rem!important;
+    }
+    .col-3 {
+        float: left;
+        width: 100%;
+    }
+    .plans {
+        padding: 4rem;
+    }
+    .plan-center {
+        position: relative;
+        top: -2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    html {
+        font-size: 65.5%;
+    }
+    .container {
+        width: 72rem;
+        padding: 1rem;
+    }
+    .links li {
+        margin-left: 1rem;
+    }
+    .background {
+        height: 60vh;
+    }
+    .content {  
+        width: 80%;
+        padding: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .how-3 {
+        width: 70%!important;
+    }
+    .col-2 {
+        float: left;
+        width: 100%;
+    }
+    .features-right {
+        padding: 2rem!important;
+    }
+    .features-right h3 {
+        padding-top: 5rem;
+    }
+    .plan-center {
+        position: relative;
+        top: -2rem;
+    }
+    .col-3 {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+@media (min-width: 992px) { 
+    html {
+        font-size: 66.5%;
+    }
+    .container {
+        width: 92rem;
+        padding: 1rem;
+    }
+    .links li {
+        margin-left: 1rem;
+    }
+    .background {
+        height: 70vh;
+        background-attachment: fixed;
+    }
+    .content {  
+        width: 75%;
+        padding: 1.8rem;
+        font-size: 1.6rem;
+    }
+    .col-2 {
+        float: left;
+        width: 50%;
+    }
+    .col-3 {
+        float: left;
+        width: 33.3%;
+    }
+    .plan-center {
+        position: relative;
+        top: -2rem;
+    }
+    .plans {
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 1200px) { 
+    html {
+        font-size: 67.5%;
+    }
+    .container {
+        width: 110rem;
+        padding: 1rem;
+    }
+    .container-cart {
+        width: 100rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .container-width {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .links li {
+        margin-left: 2rem;
+    }
+    .background {
+        height: 80vh;
+        background-attachment: fixed;
+    }
+    .content {  
+        width: 70%;
+        padding: 1.9rem;
+        font-size: 1.7rem;
+    }
+    .plan-center {
+        position: relative;
+        top: -2rem;
+    }
+    .col-2 {
+        float: left;
+        width: 50%;
+    }
+    .col-3 {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+@media (min-width: 1400px) { 
+    html {
+        font-size: 68.5%;
+    }
+    .container {
+        width: 110rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .container-cart {
+        width: 100rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .container-width {
+        width: 110rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .links li {
+        margin-left: 2rem;
+    }
+    .background {
+        height: 80vh;
+        background-attachment: fixed;
+    }
+    .content {  
+        width: 65%;
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+    .plan-center {
+        position: relative;
+        top: -2rem;
+    }
+    .col-2 {
+        float: left;
+        width: 50%;
+    }
+    .col-3 {
+        float: left;
+        width: 33.3%;
+    }
+}
