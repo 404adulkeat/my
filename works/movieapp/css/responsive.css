@@ -39,9 +39,6 @@ body {
     li,a {
         font-size: 1.3rem;
     }
-    a {
-        margin-left: 1.2rem;
-    }
     .content {  
         width: 90%;
         padding: 1.5rem;
