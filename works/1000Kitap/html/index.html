@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <title>1000 Kitap</title>
+</head>
+<body>
+    <header>    
+        <nav class="navigation">
+            <div class="nav-left d-flex align-items-center">
+                <button class="navbar-toggler me-4 d-sm-block d-md-none d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobile">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <div class="nav-logo"></div>
+            </div>
+            <div class="nav-search">
+                <i class="fa-solid fa-search"></i>
+                <input type="search" placeholder="1000Kitap'ta ara">
+            </div>
+            <div class="nav-right d-flex align-items-center">
+                <li class="me-3 d-md-none d-lg-none d-sm-block" id="konu-ekle"><i class="fa-solid fa-magnifying-glass fa-1x"></i></li>
+                <li id="konu-ekle"><a href=""><i class="fa-regular fa-square-plus fa-1x"></i></a></li>
+                <button class="btn btn-outline-primary">Giriş yap</button>
+                <li id="konu-ekle"><a href=""><i class="fa-solid fa-user fa-1x"></i></a></li>
+            </div>
+        </nav>
+    </header>
+    <section class="d-lg-flex d-md-flex">
+        <aside class="aside navbar-expand-sm">
+            <div class="aside-top">
+                <p class="p-1">Kişisel kitap arşivinizi oluşturmak, okurları, kitapları, yazarları ve konuları takip etmek için 2milyon+ okurun arasına katılın.</p>
+                <button id="log" class="btn btn-outline-primary">Kaydol</button>
+                <button id="log" class="btn btn-outline-primary">Giriş yap</button>
+                <hr>
+            </div>
+            <div id="mobile" class="navbar-toggler offcanvas offcanvas-end" data-bs-backdrop="static">
+                <div class="offcanvas-header">
+                    <button class="btn-close d-block fs-1 mt-2 m-0 p-0" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body m-0 p-0">
+                    <div class="aside-body">
+                        <div class="pin">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-house"></i><span>Akış</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-compass"></i></i><span>Keşfet</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-shopify"></i><span>Alışveriş</span></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-book-atlas"></i><span>Ne Okusam?</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="aside-body">
+                        <div class="pin">
+                            <span style="margin-left: 0;">Keşfet</span>
+                            <ul><li><a href="#"><i class="fa-solid fa-book"></i> <span>Kitaplar</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-user-pen"></i><span>Yazarlar</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-users"></i> <span>Okurlar</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-pen-to-square"></i> <span>İncelemeler</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-quote-left"></i> <span>Alıntılar</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-comment-dots"></i> <span>İletiler</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-book-open"></i> <span>Dergiler</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-language"></i> <span>Çevirmenler</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-recycle"></i> <span>Kitap Türleri</span></a></li></ul>
+                            <ul><li><a href="#"><i class="fa-solid fa-bullseye"></i> <span>Hedefler</span></a></li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-body d-none d-md-block d-lg-block">
+                <div class="pin">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i><span>Akış</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-compass"></i></i><span>Keşfet</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-shopify"></i><span>Alışveriş</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-book-atlas"></i><span>Ne Okusam?</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="d-none d-md-block d-lg-block">
+            <div class="aside-body d-none d-md-block d-lg-block">
+                <div class="pin">
+                    <span style="margin-left: 0;">Keşfet</span>
+                    <ul><li><a href="#"><i class="fa-solid fa-book"></i> <span>Kitaplar</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-user-pen"></i><span>Yazarlar</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-users"></i> <span>Okurlar</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-pen-to-square"></i> <span>İncelemeler</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-quote-left"></i> <span>Alıntılar</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-comment-dots"></i> <span>İletiler</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-book-open"></i> <span>Dergiler</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-language"></i> <span>Çevirmenler</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-recycle"></i> <span>Kitap Türleri</span></a></li></ul>
+                    <ul><li><a href="#"><i class="fa-solid fa-bullseye"></i> <span>Hedefler</span></a></li></ul>
+                </div>
+            </div>
+            <hr>
+            <button class="btn btn-outline-dark">
+                <div class="download">
+                    <div class="download-header d-flex align-items-center">
+                        <i class="fa-brands fa-google-play"></i>
+                        <p>1000Kitap Android Uygulaması</p>
+                    </div>
+                    <p>ÜCRETSİZ - Google Playden alın</p>
+                    <div class="download-footer d-flex">
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <span>1.5milyon + indirme</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button class="btn btn-outline-dark">
+                <div class="download">
+                    <div class="download-header d-flex align-items-center">
+                        <i class="fa-brands fa-apple"></i>
+                        <p>1000Kitap IOS Uygulaması</p>
+                    </div>
+                    <p>ÜCRETSİZ - Apple Store'dan alın</p>
+                    <div class="download-footer d-flex">
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <span>700bin + indirme</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </aside>
+        <main>
+            <div class="content">
+                <div class="ms-2 main-nav">
+                    <h2>Keşfet</h2>
+                    <ul class="m-0 p-0 d-flex">
+                        <li>En yeniler</li>
+                        <li class="main-nav-populer">Yükselenler</li>
+                        <li>Öne Çıkanlar</li>
+                        <li>İlgi Görenler</li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="post">
+                    <div class="main-post-top d-flex mt-5">
+                        <img src="../images/pexels-photo-220453.webp" alt="">
+                        <div class="post-info">
+                            <div class="info">
+                                <h4 class="mx-3 fs-4">404Adulkeat<span>@404 - 9s</span></h4>
+                                <span class="fs-4" style="cursor: pointer;">#Edebiyat</span>
+                            </div>
+                        </div>
+                        <button class="btn text-dark bg-transparent fs-3"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    <div class="main-post-body mt-2">
+                        <div class="post-content">
+                            <p>''... neden hiçbirimiz birbirimize karşı kardeşçe davranmıyoruz? Neden en iyi insanlar bile sanki hep başkalarından bir şeyler gizler, hep susar? Sözlerinin yel olup gitmeyeceğine emin olduğun zamanlarda bile neden yüreğinden geçenleri dosdoğru söylemezsin? Herkes olduğundan daha ketum görünüyor, sanki hemen dile getirirlerse duygularının zedeleneceğinden korkuyorlar...''
+                            <div class="content-info d-flex">
+                                <img src="../images/book1.webp" alt="">
+                                <div class="content-info-text mx-3">
+                                    <h4 class="fs-5">Fyodor Dosyoyevski, Beyaz Geceler</h4>
+                                    <span class="fs-5">Sayfa 47 - Türkiye İş Bankası Kültür Yayınları</span>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-post-footer mt-3">
+                        <ul class="footer-panel d-flex">
+                            <li><a href="#" title="Beğen"><i class="text-danger fa-solid fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                            <li><a href="#" title="Yorum yap"><i class="fa-regular fa-comment"></i></a></li>
+                            <li style="margin-left:auto;" title="Kaydet"><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="main-post-top d-flex mt-5">
+                        <img src="../images/pexels-photo-220453.webp" alt="">
+                        <div class="post-info">
+                            <div class="info">
+                                <h4 class="mx-3 fs-4">404Adulkeat<span>@404 - 9s</span></h4>
+                                <span class="fs-4" style="cursor: pointer;">#Edebiyat</span>
+                            </div>
+                        </div>
+                        <button class="btn text-dark bg-transparent fs-3"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    <div class="main-post-body mt-2">
+                        <div class="post-content">
+                            <p>''... neden hiçbirimiz birbirimize karşı kardeşçe davranmıyoruz? Neden en iyi insanlar bile sanki hep başkalarından bir şeyler gizler, hep susar? Sözlerinin yel olup gitmeyeceğine emin olduğun zamanlarda bile neden yüreğinden geçenleri dosdoğru söylemezsin? Herkes olduğundan daha ketum görünüyor, sanki hemen dile getirirlerse duygularının zedeleneceğinden korkuyorlar...''
+                            <div class="content-info d-flex">
+                                <img src="../images/book1.webp" alt="">
+                                <div class="content-info-text mx-3">
+                                    <h4 class="fs-5">Fyodor Dosyoyevski, Beyaz Geceler</h4>
+                                    <span class="fs-5">Sayfa 47 - Türkiye İş Bankası Kültür Yayınları</span>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-post-footer mt-3">
+                        <ul class="footer-panel d-flex">
+                            <li><a href="#" title="Beğen"><i class="text-danger fa-solid fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                            <li><a href="#" title="Yorum yap"><i class="fa-regular fa-comment"></i></a></li>
+                            <li style="margin-left:auto;" title="Kaydet"><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="main-post-top d-flex mt-5">
+                        <img src="../images/pexels-photo-220453.webp" alt="">
+                        <div class="post-info">
+                            <div class="info">
+                                <h4 class="mx-3 fs-4">404Adulkeat<span>@404 - 9s</span></h4>
+                                <span class="fs-4" style="cursor: pointer;">#Edebiyat</span>
+                            </div>
+                        </div>
+                        <button class="btn text-dark bg-transparent fs-3"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    <div class="main-post-body mt-2">
+                        <div class="post-content">
+                            <p>''... neden hiçbirimiz birbirimize karşı kardeşçe davranmıyoruz? Neden en iyi insanlar bile sanki hep başkalarından bir şeyler gizler, hep susar? Sözlerinin yel olup gitmeyeceğine emin olduğun zamanlarda bile neden yüreğinden geçenleri dosdoğru söylemezsin? Herkes olduğundan daha ketum görünüyor, sanki hemen dile getirirlerse duygularının zedeleneceğinden korkuyorlar...''
+                            <div class="content-info d-flex">
+                                <img src="../images/book1.webp" alt="">
+                                <div class="content-info-text mx-3">
+                                    <h4 class="fs-5">Fyodor Dosyoyevski, Beyaz Geceler</h4>
+                                    <span class="fs-5">Sayfa 47 - Türkiye İş Bankası Kültür Yayınları</span>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-post-footer mt-3">
+                        <ul class="footer-panel d-flex">
+                            <li><a href="#" title="Beğen"><i class="text-danger fa-solid fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                            <li><a href="#" title="Yorum yap"><i class="fa-regular fa-comment"></i></a></li>
+                            <li style="margin-left:auto;" title="Kaydet"><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="main-post-top d-flex mt-5">
+                        <img src="../images/pexels-photo-220453.webp" alt="">
+                        <div class="post-info">
+                            <div class="info">
+                                <h4 class="mx-3 fs-4">404Adulkeat<span>@404 - 9s</span></h4>
+                                <span class="fs-4" style="cursor: pointer;">#Edebiyat</span>
+                            </div>
+                        </div>
+                        <button class="btn text-dark bg-transparent fs-3"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    <div class="main-post-body mt-2">
+                        <div class="post-content">
+                            <p>''... neden hiçbirimiz birbirimize karşı kardeşçe davranmıyoruz? Neden en iyi insanlar bile sanki hep başkalarından bir şeyler gizler, hep susar? Sözlerinin yel olup gitmeyeceğine emin olduğun zamanlarda bile neden yüreğinden geçenleri dosdoğru söylemezsin? Herkes olduğundan daha ketum görünüyor, sanki hemen dile getirirlerse duygularının zedeleneceğinden korkuyorlar...''
+                            <div class="content-info d-flex">
+                                <img src="../images/book1.webp" alt="">
+                                <div class="content-info-text mx-3">
+                                    <h4 class="fs-5">Fyodor Dosyoyevski, Beyaz Geceler</h4>
+                                    <span class="fs-5">Sayfa 47 - Türkiye İş Bankası Kültür Yayınları</span>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-post-footer mt-3">
+                        <ul class="footer-panel d-flex">
+                            <li><a href="#" title="Beğen"><i class="text-danger fa-solid fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                            <li><a href="#" title="Yorum yap"><i class="fa-regular fa-comment"></i></a></li>
+                            <li style="margin-left:auto;" title="Kaydet"><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-right">
+                <div class="aside-agenda ms-5 mb-4">
+                    <h2 class="m-0">Gündem</h2>
+                    <ul class="p-0 m-0 aside-agenda-list">
+                        <li class="d-flex align-items-center justify-content-between">
+                            <div class="list-info">
+                                <span class="fs-5">1000Kitap'da gündem</span>
+                                <h3 class="m-0">Edebiyat</h3>
+                                <span class="fs-5">6.5bin gönderi</span>
+                            </div>
+                            <div class="list-hashtag"><i class="fa-solid fa-hashtag"></i></div>
+                        </li>
+                    </ul>
+                    <ul class="p-0 m-0 aside-agenda-list">
+                        <li class="d-flex align-items-center justify-content-between">
+                            <div class="list-info">
+                                <span class="fs-5">1000Kitap'da gündem</span>
+                                <h3 class="m-0">Bilişim</h3>
+                                <span class="fs-5">5.5bin gönderi</span>
+                            </div>
+                            <div class="list-hashtag"><i class="fa-solid fa-hashtag"></i></div>
+                        </li>
+                    </ul>
+                    <ul class="p-0 m-0 aside-agenda-list">
+                        <li class="d-flex align-items-center justify-content-between">
+                            <div class="list-info">
+                                <span class="fs-5">1000Kitap'da gündem</span>
+                                <h3 class="m-0">Tarih</h3>
+                                <span class="fs-5">3.5bin gönderi</span>
+                            </div>
+                            <div class="list-hashtag"><i class="fa-solid fa-hashtag"></i></div>
+                        </li>
+                    </ul>
+                    <ul class="p-0 m-0 aside-agenda-list">
+                        <li class="d-flex align-items-center justify-content-between">
+                            <div class="list-info">
+                                <span class="fs-5">1000Kitap'da gündem</span>
+                                <h3 class="m-0">Din</h3>
+                                <span class="fs-5">2.5bin gönderi</span>
+                            </div>
+                            <div class="list-hashtag"><i class="fa-solid fa-hashtag"></i></div>
+                        </li>
+                    </ul>
+                    <ul class="p-0 m-0 aside-agenda-list">
+                        <li class="d-flex align-items-center justify-content-between">
+                            <div class="list-info">
+                                <span class="fs-5">1000Kitap'da gündem</span>
+                                <h3 class="m-0">Felsefe</h3>
+                                <span class="fs-5">1.5bin gönderi</span>
+                            </div>
+                            <div class="list-hashtag"><i class="fa-solid fa-hashtag"></i></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aside-offer ms-5 mb-5">
+                    <h2 class="m-0">Popüler Kitaplar</h2>
+                    <ul class="d-flex p-0 aside-offer-list">
+                        <img class="offer-photo mt-4 rounded" src="../images/100_1472675944.webp">
+                        <div class="offer-info mt-4 ms-4">
+                            <h3>1984</h3>
+                            <div class="offer-info-title">
+                                <img class="offer-info-photo rounded" src="../images/9414_3e605_1551460437.webp">
+                                <span class="fs-5 m-0">George Orwell</span>
+                            </div>
+                            <div class="offer-info-rating mt-1">
+                                <i class="fa-solid fa-star"></i> 9.1/10 -
+                                140.5bin okunma
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="d-flex p-0 aside-offer-list">
+                        <img class="offer-photo mt-4 rounded" src="../images/27823_62bf3_1630271083.webp">
+                        <div class="offer-info mt-4 ms-4">
+                            <h3>Simyacı</h3>
+                            <div class="offer-info-title">
+                                <img class="offer-info-photo rounded" src="../images/9414_3e605_1551460437.webp">
+                                <span class="fs-5 m-0">George Orwell</span>
+                            </div>
+                            <div class="offer-info-rating mt-1">
+                                <i class="fa-solid fa-star"></i> 8.7/10 -
+                                133.5bin okunma
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="d-flex p-0 aside-offer-list">
+                        <img class="offer-photo mt-4 rounded" src="../images/56085_RXIua_1525561545.webp">
+                        <div class="offer-info mt-4 ms-4">
+                            <h3>Hayvan Çiftliği</h3>
+                            <div class="offer-info-title">
+                                <img class="offer-info-photo rounded" src="../images/9414_3e605_1551460437.webp">
+                                <span class="fs-5 m-0">George Orwell</span>
+                            </div>
+                            <div class="offer-info-rating mt-1">
+                                <i class="fa-solid fa-star"></i> 7.9/10 -
+                                122.5bin okunma
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

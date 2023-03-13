@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+span {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.navigation {
+    padding: 1rem;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    background-image: url(../images/logo-buyuk.webp);
+    background-size: 100% 100%;
+    height: 2rem;
+    width: 12rem;
+}
+.nav-search {
+    padding: 1rem 2rem;
+    display: flex;
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 1rem;
+    width: 40rem;
+    text-align: center;
+    align-items: center;
+}
+.nav-search > .fa-search {
+    color: rgba(0,0,0,.6);
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.nav-search > input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0 1rem;
+    width: 100%;
+    height: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+#konu-ekle {
+    font-size: 2.2rem;
+    list-style: none;
+}
+#konu-ekle > a {
+    color: black;
+    font-size: 2.2rem;
+}
+.nav-right > button {
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+.aside {
+    flex: 15%;
+}
+.aside-top {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background: #fff;
+}
+.aside-body {
+    padding: 0 1rem;
+}
+.aside-top > p {
+    color: rgba(0,0,0,.6);
+    font-size: 1.5rem;
+}
+#log {
+    padding: 1rem 1.5rem;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+.pin > ul,li,a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+.pin > ul:hover {
+    background-color: rgba(0,0,0,.05);
+    cursor: pointer;
+}
+.aside span {
+    margin-left: 1.2rem;
+}
+.aside > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+.download {
+    text-align: left;
+    font-size: 1.2rem;
+}
+.download-header > .fa-brands {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+.download-header > p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+.download-footer span {
+    font-size: 1rem;
+}
+.download-footer div {
+    font-size: 1rem;
+}
+.aside > button {
+    border-radius: 1.5rem; 
+    margin-top: .5rem; 
+    padding: 1rem;
+}
+main {
+    display: flex;
+    flex: 80%;
+}
+.content {
+    flex: 70%;
+}
+.aside-right {
+    flex: 30%;
+}
+.main-nav h2 {
+    padding: 1rem;
+}
+.main-nav li {
+    margin-right: 2rem;
+    padding: 1rem;
+}
+.main-nav li:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.05);
+}
+.main-nav-populer {
+    color: var(--danger);
+    font-weight: 700;
+    border-bottom: 2px solid var(--danger);
+}
+.main-post-top img {
+    width: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+}
+.main-post-top button {
+    margin-left: auto;
+}
+.info span {
+    margin-left: 1rem;
+}
+.main-post-body {
+    background: #FFF9E9;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+}
+.post-content img {
+    width: 4rem;
+    border-radius: 20%;
+}
+.footer-panel li {
+    margin-right: .5rem;
+    background: rgba(0,0,0,.05);
+    padding: 0rem 1.5rem;
+}
+.fa-hashtag {
+    color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.05);
+    padding: 1rem;
+    border-radius: 100%;
+    margin-right: 3rem;
+}
+.offer-photo {
+    width: 6rem;
+}
+.offer-info-photo {
+    width: 2rem;
+    height: 2.5rem;
+}
+.aside-agenda-list:hover {
+    background-color: rgba(0,0,0,.05);
+    cursor: pointer;
+}
+.aside-offer-list:hover {
+    background-color: rgba(0,0,0,.05);
+    cursor: pointer;
+}
